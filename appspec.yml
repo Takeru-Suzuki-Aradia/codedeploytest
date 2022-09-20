@@ -5,6 +5,8 @@ files:
     destination: /var/www/html/
   - source: /sources
     destination: /var/www/html/sources
+  - source: /index.php
+    destination: /home/deploy/www/
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
